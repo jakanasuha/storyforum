@@ -1,0 +1,165 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<style>
+			#Tittle {color : rgb (12 13 190) ;
+				font-family : monospace;
+				font-size: 100px;
+				margin-bottom : 50px;
+			}
+			.paragraph {
+				background-color : yellow;
+				color : black ; 
+			}
+			#kotak1 {
+		
+            display : inline-block;		
+	    background-color: red;
+            width: 80px;
+            border: 1px solid black;
+            padding: 2px;
+            margin-bottom : 10px;
+            margin-top : 0px;
+            
+			}
+			#kotak2 {
+		
+            display : inline-block;		
+	    background-color: black;
+	    color :white;
+            width: 80px;
+            border: 1px solid black;
+            padding: 2px;
+            margin-bottom : 20px;
+            margin-top : 20px;
+            
+			}
+			#quotes { 
+			    font-size : 22px;
+			    font-family : monospace;
+			    margin-bottom : 0px;
+			}
+			#quotess { 
+			    font-size : 22px;
+			    font-family : monospace;
+			    margin-bottom : 10px;
+			    margin-top :0px;
+			}
+			.container {
+			    text-align : center;
+				}		
+    
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed ; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+    padding-top: 50px;
+	}
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 20px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+</style>
+
+	</head>
+<body>
+	<h1 id="Tittle">
+	<center> The Bedroom Story </center>
+	</h1>
+	<h2 id="quotess" >
+	   <center> Now you can archive your memory in a little note or as long as you want ! </center>
+	</h2>
+<div class="container">
+	<div id ="kotak1">
+    <center> Gallery </center>
+	</div> 
+	<div id ="kotak1">
+	<center> Gathering </center>    
+	</div>
+	<div id ="kotak1">
+	<center> Project </center>    
+	</div>
+	<div id ="kotak1">
+	<center> Contact Us </center>    
+	</div>
+</div>	
+	<h2 id="quotes">
+	   <center> start sharing your exciting moment ever ! <br> (minimum 1000 words) <br>
+<button onclick="document.getElementById('id01').style.display='block'">Sign Up</button>
+<button onclick="document.getElementById('id02').style.display='block'">Login</button> 
+	   </center>
+	</h2>
+<div id="id01" class="modal">
+  <!-- span onclick="document.getElementById('id01').style.display='block'" class="close" title="Close Modal">&times;</span -->
+  <form class="modal-content" action="/action_page.php">
+    <div class="container">
+      <h1>Sign Up</h1>
+      <p>Please fill in this form to create an account.</p>
+      <hr>
+      <label for="email"><b>Email</b></label>
+      <input type="text" placeholder="Enter Email" name="email" required> 
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required> 
+
+      <label for="psw-repeat"><b>Repeat Password</b></label>
+      <input type="password" placeholder="Repeat Password" name="psw-repeat" required> <br>
+      
+      <label>
+        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+
+      <div class="clearfix">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    </div>
+  </form>
+</div>
+<div id="id02" class="modal">
+  
+  <form class="modal-content " action="/action_page.php">
+    <div class="container">
+      <h1>Log in</h1> 
+      <p>Please fill in this log to your account.</p>
+      <hr>
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required> <br> 
+        
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me <br> <br>
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+      <button type="submit">Login</button>
+    </div>
+  </form>
+</div> <h2 id="quotess">
+	<br> <center>
+		Or You Can Start Anonymously Now !! 
+	<form action="/action_page.php">
+  <textarea name="message" style="width:800px; height:200px; margin-top:20px;" input type="message" placeholder="Write Here" name="uname" required ></textarea>
+  <br>
+  <input type="submit">
+	</form>
+	     <center>
+	</h2>
+</body>
+</html>
